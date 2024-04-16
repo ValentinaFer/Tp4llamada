@@ -16,7 +16,7 @@ public class WifiConectado extends BroadcastReceiver {
         if (estado){
             Toast.makeText(context, "esta conectado a una red WIFI!", Toast.LENGTH_SHORT).show();
             Intent intentLlamada = new Intent(Intent.ACTION_CALL);
-            intentLlamada.setData(Uri.parse("tel:"+"")); //remember to change to prof number
+            intentLlamada.setData(Uri.parse("tel:"+"2664553747"));
             intentLlamada.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intentLlamada);
         } else {

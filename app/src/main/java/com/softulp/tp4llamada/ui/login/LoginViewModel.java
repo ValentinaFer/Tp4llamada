@@ -29,7 +29,7 @@ public class LoginViewModel extends AndroidViewModel {
         return mError;
     }
     public void isUserDataValid(String username, String password) {
-        if (username.equals("Copado") && password.equals("123")){
+        if (username.equals("Admin") && password.equals("123")){
             Intent intent = new Intent(getApplication(), MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             getApplication().startActivity(intent);
